@@ -54,9 +54,9 @@ section {
 }
 .btn {
   background: var(--primary-color);
-  padding: 0.6em 1.6em;
+  padding: 0.6em 1.1em;
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -73,7 +73,8 @@ section {
 }
 .section_subheading {
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
+  color: #412eac;
 }
 
 /* Nav style */
@@ -179,7 +180,7 @@ section {
 }
 
 .btn svg {
-  width: 25px;
+  width: 20px;
 }
 @media only screen and (min-width: 768px) {
   #hero {
@@ -193,14 +194,14 @@ section {
     padding: 3rem;
   }
   #hero .hero_left .name {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   #hero .hero_left .title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     /* letter-spacing: 0.1em; */
   }
   #hero .hero_left .hero_desc {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 3.5rem;
   }
   .nav {
@@ -243,7 +244,7 @@ section {
   box-shadow: 0px 0px 10px 0px #2b1e74;
 }
 .all-items .item .portfolio_title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #7861f7;
   text-align: center;
@@ -264,7 +265,7 @@ section {
 }
 @media only screen and (min-width: 768px) {
   #portfolio {
-    padding: 10rem 0;
+    padding: 5rem 0;
   }
 
   #portfolio .section_subheading {
@@ -272,6 +273,7 @@ section {
   }
   #portfolio .all-items {
     gap: 1rem;
+    margin-bottom: 5rem;
   }
   #portfolio .all-items .item {
     flex-direction: row;
@@ -288,9 +290,186 @@ section {
     text-align: left;
     padding: 2rem;
   }
+  .all-items .item .right .project_desc {
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+  }
+  .all-items .right .portfolio_title {
+    font-size: 2rem;
+  }
 
   .all-items .right .portfolio_title,
   .all-items .right .portfolio_desc {
     text-align: left;
   }
+  .all-items .right .portfolio_desc {
+    font-size: 1.6rem;
+  }
+}
+
+/* About styles */
+
+#about {
+  padding: 10rem 0;
+}
+
+#about .about_wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.about_wrapper .about_img {
+  width: 100%;
+  flex: 3;
+  height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.about_wrapper .about_img img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+.about_wrapper .about_info {
+  flex: 6;
+  padding: 2rem 5rem;
+}
+.about_info .about_text {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+.social_links {
+  margin-bottom: 4rem;
+}
+.social_links ul {
+  display: flex;
+}
+.social_links ul li {
+  margin-right: 1.5rem;
+}
+.social_links ul li a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social_links ul li a ion-icon {
+  font-size: 30px;
+  color: black;
+}
+.about_info .buttons {
+  justify-content: flex-start;
+}
+.about_info .btn.outline {
+  background: transparent;
+  border: 2px solid #6c56e1;
+  color: #412eac;
+  transition: 0.3s;
+}
+.about_info .btn.outline:hover {
+  background: #6c56e1;
+  color: #fff;
+}
+.about_info .btn.outline span {
+  font-weight: 500;
+}
+.about_info .btn.outline ion-icon {
+  font-size: 2rem;
+  transition: 0.3s;
+}
+.about_info .social_link:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+.about_info .social_link ion-icon {
+  transition: 0.3s;
+}
+.about_info .social_link:hover ion-icon {
+  color: #412eac;
+}
+@media only screen and (max-width: 768px) {
+  #about {
+    padding: 5rem 0;
+  }
+  #about .about_wrapper {
+    flex-direction: column;
+  }
+}
+/* Skills styles */
+
+#skills {
+  padding: 5rem 0;
+}
+.container-small {
+  width: 70%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.skills_card_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+#skills .skill_title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+.skill_title .logo {
+  width: 5rem;
+  height: 5rem;
+}
+.skill_title .logo svg {
+  stroke-width: 2;
+  color: #6c56e1;
+}
+.skill_title .title {
+  font-size: 3rem;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+.skill_logo {
+  width: 9rem;
+  height: 9rem;
+  padding: 1rem;
+  border-radius: 6px;
+}
+.skill_logo .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.skill_logo .icon svg {
+  width: 100%;
+  height: 60%;
+}
+.skill_logo .skill_name {
+  text-align: center;
+  font-size: 1.3rem;
+}
+.skills_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  color: var(--black-2);
+}
+
+.skills_card {
+  padding: 2rem;
+  border-radius: 9px;
+  box-shadow: 0px 0px 20px 0px #4705fc1f;
+}
+.skills_card:nth-child(1),
+.skills_card:nth-child(2) {
+  flex: 1;
+}
+#skills {
+  display: none;
 }
