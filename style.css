@@ -214,6 +214,23 @@ section {
 
 /* Works styles */
 #portfolio {
+  padding: 5rem 0;
+  width: 100%;
+  /* width: 600px; */
+}
+.all-items .item {
+  display: flex;
+  flex-direction: column;
+}
+.all-items .item .left {
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: var(--black-2);
+  padding: 1.5rem;
+}
+.all-items .item .left img {
+  object-fit: cover;
 }
 
 /* #portfolio {
