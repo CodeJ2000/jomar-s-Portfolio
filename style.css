@@ -311,6 +311,7 @@ section {
 
 #about {
   padding: 10rem 0;
+  display: none;
 }
 
 #about .about_wrapper {
