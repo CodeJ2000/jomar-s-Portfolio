@@ -221,18 +221,25 @@ section {
 .all-items .item {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .all-items .item .left {
   max-width: 400px;
   overflow: hidden;
   border-radius: 10px;
   background: var(--black-2);
-  padding: 1.5rem;
+  padding: 1rem;
 }
 .all-items .item .left img {
   object-fit: cover;
+  width: 300px;
+  margin: 0 auto;
+  /* display: none; */
 }
-
+.all-items .item .right {
+  display: none;
+}
 /* #portfolio {
   padding: 5rem 0;
   border: 1px solid black;
